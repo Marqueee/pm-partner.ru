@@ -1,0 +1,89 @@
+//main Variables
+//Header line
+.header-line-down{
+  @header-line-down-color:  darken(@brand-danger,5%);
+  border-bottom: @header-line-down-color 1px solid;
+}
+.header-line-up{
+  @header-line-up:    lighten(@brand-danger,5%);
+  border-top: @header-line-up 1px solid;
+}
+.container{
+  width: 1200px !important;
+}
+//HEADER CUSTOM STYLES
+.logo{
+  width: 105px;
+  height: 65px;
+}
+.header-top{
+    .header-line-down;
+    background-color: @brand-danger;
+    padding:15px 0;
+      h4{
+      color:@color-white;
+      margin-top: 3px;
+      }
+      a{
+      color:@color-white;
+      }
+}
+  nav{
+    .row{
+      background-color: @brand-danger;
+      padding:15px 0;
+      .header-line-up;
+    }
+    a{
+      color:@color-white;
+      &:hover{
+        color:@color-white;
+      }
+    }
+  }
+
+.tel-header{
+  color:#72001B !important; 
+  vertical-align: bottom;
+}
+.gray{
+  color:@color-gray;
+}
+.pink{
+   color:@brand-danger;
+}
+.icons-header{
+  margin-top: 5px;
+    #vk{
+      display: inline-block;
+      background: url(../img/vk.svg) no-repeat;
+      background-size: 25px;
+      width: 25px;
+      height: 25px;
+    }
+    #fb{
+      display: inline-block;
+      background: url(../img/fb.svg) no-repeat;
+      background-size: 25px;
+      width: 25px;
+      height: 25px;
+    }
+    #tw{
+      display: inline-block;
+      background: url(../img/tw.svg) no-repeat;
+      background-size: 25px;
+      width: 25px;
+      height: 25px;
+    }
+}
+.main-content{
+  padding-top: 30px;
+  
+}
+.main-slide{
+  background: #EEEFEF;
+  padding-top: 35px; 
+}
+.big-li li{
+  margin-bottom: 20px;
+}
