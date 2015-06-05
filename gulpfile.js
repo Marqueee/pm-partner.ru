@@ -11,7 +11,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
     cssmin = require('gulp-minify-css'),
-    rename = require('gulp-rename')
+    rename = require('gulp-rename'),
+    jpegtran = require('imagemin-jpegtran'),
+    gifsicle = require('imagemin-gifsicle')
     reload = browserSync.reload;
   
 
@@ -100,9 +102,14 @@ gulp.task('img', function() {
     .pipe(imagemin({            //Setting up img minimizer
         progressive:true,
         svgoPlugins:[{removeViewBox:false}],
-        use:[pngquant()],
+        use:[
+          pngquant(),
+          jpegtran(),
+          gifsicle()
+        ],
         interlaced:true
   }))
+    
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({stream: true}));
 });
@@ -135,6 +142,9 @@ gulp.task('watch',function () {   //если изменяем файл в src.ht
   });
       watch([path.watch.img],function(event, cb){
         gulp.start('img');
+   });     
+      watch([path.watch.js],function(event, cb){
+        gulp.start('js');
    });     
 });
 
