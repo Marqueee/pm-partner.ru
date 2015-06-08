@@ -89,19 +89,29 @@
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
 	padding: 3px 10px;
-	font-size: 12px;
+	font-size: 30px;
+    color:#6D6E71;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background:#EA2A53;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	background: none;
+    font-weight: 100;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	text-decoration: none;
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -30px;
+  top: 5px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -30px;
+  top: 5px;
 }
 
 /* Styling Pagination*/
