@@ -19,5 +19,6 @@ $(document).ready(function(){
   $('.owl-projects').owlCarousel({
     navigation: false,
     items: 3
-  })
+  });
+  $('input, textarea').placeholder();
 });

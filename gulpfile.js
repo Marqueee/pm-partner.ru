@@ -87,9 +87,9 @@ gulp.task('style', function (done) {
                         'ios 6', 
                         'android 4'
           ))
-    .pipe(sourcemaps.write('./maps')) //setting up css sourcemaps
-    .pipe(cssmin())
+    .pipe(cssmin({showLog:true}))
     .pipe(rename({suffix: '.min'}))
+    .pipe(sourcemaps.write('./maps')) //setting up css sourcemaps
     .pipe(gulp.dest(path.build.css)) //Writing file in a build/css
     .on('end', function(){
           done()
