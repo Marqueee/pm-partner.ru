@@ -17,6 +17,13 @@
   height: 65px;
 }
 .header-top{
+  .btn-danger{
+    background-color: @brand-danger-dark;
+    border-top-color: lighten(@brand-danger-dark, 15%) ;
+    border-left-color: lighten(@brand-danger-dark, 15%);
+    border-bottom-color: darken(@brand-danger-dark, 5%);
+    border-right-color: darken(@brand-danger-dark, 5%);
+  }
     .header-line-down;
     background-color: @brand-danger;
     padding:15px 0;
@@ -85,6 +92,9 @@
 .main-content{
   padding-top: 30px;
   padding-bottom: 60px;
+}
+.main-content-ident{
+  margin-top: 45px;
 }
 .main-slide{
   background: #EEEFEF;
@@ -212,4 +222,15 @@
   background-color: @color-footer-dark;
   padding: 10px 0;
   box-shadow: inset 0 5px 5px -5px rgba(0,0,0,0.5);
+  vertical-align: bottom;
+  .col-xs-3 {
+    a{
+    display: inline-block;
+    padding-top: 8px;
+    }
+  }
+}
+.no-gutter{
+    padding-right:0;
+    padding-left:0;
 }
