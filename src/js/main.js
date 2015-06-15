@@ -21,4 +21,5 @@ $(document).ready(function(){
     items: 3
   });
   $('input, textarea').placeholder();
+
 });
