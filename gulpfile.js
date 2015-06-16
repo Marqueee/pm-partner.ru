@@ -59,7 +59,7 @@ gulp.task('webserver', function(){
   browserSync(config);      //Run webserver with config
 });
 gulp.task('clean',function(cb){
-  
+  rimraf(path.clean, cb);
 })
 
 /************BUILDS*******************/
@@ -87,8 +87,6 @@ gulp.task('style', function (done) {
                         'ios 6', 
                         'android 4'
           ))
-    .pipe(cssmin({showLog:true}))
-    .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('./maps')) //setting up css sourcemaps
     .pipe(gulp.dest(path.build.css)) //Writing file in a build/css
     .on('end', function(){
@@ -116,8 +114,6 @@ gulp.task('img', function() {
 //JS
 gulp.task('js', function(){
   gulp.src(path.src.js)
-    .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));    
 });
