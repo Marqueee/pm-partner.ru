@@ -7431,7 +7431,8 @@ h3.active a {
   padding-bottom: 60px;
 }
 /*************NEWS****************/
-.news-main .collapse-block {
+.news-aside .collapse-block,
+.learning-aside .collapse-block {
   padding-left: 35px;
 }
 .news-list-body {
@@ -7457,9 +7458,571 @@ h3.active a {
 }
 .learning-sales {
   background-color: #eeefef;
-}
-.learning-index {
   font-size: 20px;
+  padding-bottom: 60px;
+}
+.learning-content {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.learning-content p {
+  padding-bottom: 30px;
+}
+.learning-content ul {
+  padding-left: 0px;
+}
+.learning-content li {
+  padding: 12.5px 0;
+  list-style-type: none;
+}
+.learning-content li:before {
+  content: "•";
+  color: #ea2a53;
+  padding-right: 10px;
+}
+.learning-content small,
+.learning-content .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.learning-content small,
+.learning-content .small {
+  font-size: 65%;
+}
+.learning-request {
+  padding-top: 30px;
+}
+.programs-icons {
+  padding-bottom: 25px;
+}
+.programs-icons li img {
+  width: 32px;
+  height: 32px;
+}
+/************Basic calendar styles******/
+.fc-calendar-container {
+  position: relative;
+  height: 350px;
+  width: 350px;
+}
+.fc-calendar {
+  width: 100%;
+  height: 100%;
+}
+.fc-calendar .fc-head {
+  height: 30px;
+  line-height: 30px;
+  background: #ccc;
+  color: #fff;
+}
+.fc-calendar .fc-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: calc(70%);
+}
+.fc-calendar .fc-row {
+  width: 100%;
+}
+.fc-four-rows .fc-row {
+  height: 25%;
+}
+.fc-five-rows .fc-row {
+  height: 20%;
+}
+.fc-six-rows .fc-row {
+  height: 16.66%;
+  height: calc(16.66666667%);
+}
+.fc-calendar .fc-row > div,
+.fc-calendar .fc-head > div {
+  float: left;
+  height: 100%;
+  width: 14.28%;
+  /* 100% / 7 */
+  width: calc(14.28571429%);
+  position: relative;
+}
+/* IE 9 is rounding up the calc it seems */
+.ie9 .fc-calendar .fc-row > div,
+.ie9 .fc-calendar .fc-head > div {
+  width: 14.2%;
+}
+.fc-calendar .fc-row > div {
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.fc-calendar .fc-head > div {
+  text-align: center;
+}
+.fc-calendar .fc-row > div > span.fc-date {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ddd;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8);
+  bottom: 5px;
+  right: 5px;
+  text-align: right;
+}
+.fc-calendar .fc-row > div > span.fc-weekday {
+  padding-left: 5px;
+  display: none;
+}
+.fc-calendar .fc-row > div.fc-today {
+  background: #fff4c3;
+  border-radius: 45px;
+  height: 45px;
+  width: 45px;
+}
+.fc-calendar .fc-row > div.fc-out {
+  opacity: 0.6;
+}
+.fc-calendar .fc-row > div:last-child,
+.fc-calendar .fc-head > div:last-child {
+  border-right: none;
+}
+.fc-calendar .fc-row:last-child {
+  border-bottom: none;
+}
+/* Custom calendar elements */
+.custom-calendar-wrap {
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+}
+.custom-inner {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.custom-inner:before,
+.custom-inner:after {
+  content: '';
+  width: 99%;
+  height: 50%;
+  position: absolute;
+  background: #f6f6f6;
+  bottom: -4px;
+  left: 0.5%;
+  z-index: -1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.custom-inner:after {
+  content: '';
+  width: 98%;
+  bottom: -7px;
+  left: 1%;
+  z-index: -2;
+}
+.custom-header {
+  background: #fff;
+  padding: 5px 10px 10px 20px;
+  height: 70px;
+  position: relative;
+}
+.custom-header h2,
+.custom-header h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.custom-header h2 {
+  color: #ea2a53;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.custom-header h3 {
+  font-size: 10px;
+  font-weight: 700;
+  color: #b7bbc2;
+}
+.custom-header nav span {
+  position: absolute;
+  top: 17px;
+  width: 30px;
+  height: 30px;
+  color: transparent;
+  cursor: pointer;
+  margin: 0 1px;
+  font-size: 20px;
+  line-height: 30px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.custom-header nav span:first-child {
+  left: 5px;
+}
+.custom-header nav span:last-child {
+  right: 5px;
+}
+.custom-header nav span:before {
+  font-family: 'fontawesome-selected';
+  color: #ea2a53;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.custom-header nav span.custom-prev:before {
+  font-family: 'Glyphicons Halflings';
+  content: '\e079';
+  color: #58595a;
+  font-size: 15px;
+}
+.custom-header nav span.custom-next:before {
+  font-family: 'Glyphicons Halflings';
+  content: '\e080';
+  color: #58595a;
+  font-size: 15px;
+}
+.custom-header nav span:hover:before {
+  color: #495468;
+}
+.custom-content-reveal {
+  background: #f6f6f6;
+  background: rgba(246, 246, 246, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0px;
+  text-align: center;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.custom-content-reveal span.custom-content-close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #ea2a53;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  line-height: 13px;
+  padding: 0;
+}
+.custom-content-reveal span.custom-content-close:after {
+  content: 'x';
+  font-size: 18px;
+  color: #fff;
+}
+.custom-content-reveal a,
+.custom-content-reveal span {
+  font-size: 22px;
+  padding: 10px 30px;
+  display: block;
+}
+.custom-content-reveal h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #777;
+  padding: 20px;
+  background: #fff;
+  border-top: 5px solid #ea2a53;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+.custom-content-reveal span {
+  color: #888;
+}
+.custom-content-reveal a {
+  color: #ea2a53;
+}
+.custom-content-reveal a:hover {
+  color: #333;
+}
+/* Modifications */
+.fc-calendar-container {
+  height: 350px;
+  width: auto;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+}
+.fc-calendar .fc-head {
+  background: transparent;
+  color: #ea2a53;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.fc-calendar .fc-row > div {
+  background: #fff;
+  cursor: pointer;
+}
+.fc-calendar .fc-row > div:empty {
+  background: transparent;
+}
+.fc-calendar .fc-row > div > span.fc-date {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin: -10px 0 0 -15px;
+  color: #686a6e;
+  font-weight: 400;
+  pointer-events: none;
+}
+.fc-calendar .fc-row > div.fc-today {
+  background: #ea2a53;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+}
+.fc-calendar .fc-row > div.fc-today > span.fc-date {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.fc-calendar .fc-row > div.fc-content:after {
+  content: '\00B7';
+  text-align: center;
+  width: 20px;
+  margin-left: -10px;
+  position: absolute;
+  color: #DDD;
+  font-size: 70px;
+  line-height: 20px;
+  left: 50%;
+  bottom: 3px;
+}
+.fc-calendar .fc-row > div.fc-today.fc-content:after {
+  color: #b02c42;
+}
+.fc-calendar .fc-row > div.fc-content:hover:after {
+  color: #ea2a53;
+}
+.fc-calendar .fc-row > div.fc-today.fc-content:hover:after {
+  color: #fff;
+}
+.fc-calendar .fc-row > div > div a,
+.fc-calendar .fc-row > div > div span {
+  display: none;
+  font-size: 22px;
+}
+@media screen and (max-width: 400px) {
+  .fc-calendar-container {
+    height: 300px;
+  }
+  .fc-calendar .fc-row > div > span.fc-date {
+    font-size: 15px;
+  }
+}
+/* ===========================================================
+ *
+ *  Name:          selectordie_dev.css
+ *  Updated:       2014-10-10
+ *  Created by:    Per V @ Vst.mn
+ *  What?:         Base CSS for Select or Die
+ *
+ *  Copyright (c) 2014 Per Vestman
+ *  Dual licensed under the MIT and GPL licenses.
+ *
+ *  No, I don't usually comment my CSS, but in this
+ *  case it might "help" someone.
+ *
+ *  Oddny | Cogs 'n Kegs
+ * =========================================================== */
+.sod_select,
+.sod_select * {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The SoD - Please keep this first three lines intact, otherwise all hell will break looooooose */
+.sod_select {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  font-family: "CirceWebLight", Helvetica, Arial, sans-serif;
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  color: #58595a;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  outline: 0;
+  outline-offset: -2px;
+  /* Opera */
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+/* Up/Down arrows */
+.sod_select:before,
+.sod_select:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  font-size: 11px;
+  color: #ea2a53;
+}
+/* Down arrow */
+.sod_select:after {
+  content: "\25BC";
+  top: auto;
+  bottom: 12px;
+}
+/* When the entire SoD is disabled, go crazy! */
+.sod_select.disabled {
+  border-color: #828282;
+  color: #b2b2b2;
+  cursor: not-allowed;
+}
+/* The "label", or whatever we should call it. Keep the first three lines for truncating. */
+.sod_select .sod_label {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #58595a !important;
+  padding-right: 15px;
+}
+.sod_select .sod_prefix {
+  /* Use this if you're using a prefix and want to style it */
+}
+.sod_select .sod_placeholder {
+  /* Use this if you're using a placeholder and want to style it */
+}
+/* Options list wrapper */
+.sod_select .sod_list_wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-top: none;
+  color: #58595a;
+  font-weight: 300;
+  z-index: 1;
+}
+/* Shows the option list (don't edit) */
+.sod_select.open .sod_list_wrapper {
+  display: block;
+}
+/* Don't display the options when  */
+.sod_select.disabled.open .sod_list_wrapper {
+  display: none;
+}
+/* When the option list is displayed above the SoD */
+.sod_select.above .sod_list_wrapper {
+  top: auto;
+  bottom: 100%;
+  border-top: 3px solid #000000;
+  border-bottom: none;
+}
+/* Options list container */
+.sod_select .sod_list {
+  display: block;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+}
+/* All the options. Keep the first three lines for truncating... */
+.sod_select .sod_option {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  padding: 10px 10px;
+  list-style-type: none;
+}
+/* Optgroups */
+.sod_select .sod_option.optgroup,
+.sod_select .sod_option.optgroup.disabled {
+  background: inherit;
+  color: #939393;
+  font-size: 10px;
+}
+/* Children of an optgroup */
+.sod_select .sod_option.groupchild {
+  padding-left: 20px;
+}
+/* Used together with placeholderOption / data-placeholder-option */
+.sod_select .sod_option.is-placeholder {
+  display: none;
+}
+/* Disabled option */
+.sod_select .sod_option.disabled {
+  background: inherit;
+  color: #cccccc;
+}
+/* Hover state for options, also used when a user uses his/hers up/down keys */
+.sod_select .sod_option.active {
+  background: #f7f7f7;
+  color: #333333;
+}
+/*Make room for the check mark */
+.sod_select .sod_option.selected {
+  font-weight: 700;
+  padding-right: 25px;
+}
+/* Displays a check mark for the selected option */
+.sod_select .sod_option.selected:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  color: #808080;
+  height: 9px;
+  width: 10px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTAgOSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAgOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBmaWxsPSIjRDlEOUQ4IiBkPSJNNCw2LjdDMy42LDYuMywzLjUsNi4xLDMuMSw1LjdDMi42LDUuMiwyLDQuNiwxLjUsNC4xYy0wLjgtMC44LTIsMC40LTEuMiwxLjJjMC45LDAuOSwxLjksMS45LDIuOCwyLjgNCgkJYzAuNywwLjcsMS4zLDEsMiwwQzYuNyw2LDguMywzLjcsOS44LDEuNUMxMC41LDAuNSw5LTAuMyw4LjMsMC42bDAsMEM2LjcsMi45LDUuNyw0LjQsNCw2LjciLz4NCjwvZz4NCjwvc3ZnPg0K);
+}
+/* Add a .no_highlight class to you SoD to hide the check mark and don't bold the option */
+.sod_select.no_highlight .sod_option.selected {
+  font-weight: 300;
+}
+.sod_select.no_highlight .sod_option.selected:before {
+  display: none;
+}
+.sod_select .sod_option.link {
+  /* If data-link is set on a specific option */
+}
+.sod_select .sod_option.linkexternal {
+  /* If data-link-external is set on a specific option */
+}
+/* Hide native select */
+.sod_select select {
+  display: none !important;
+}
+/* The native select in touch mode. Keep this first line. Sorry, keep everything. */
+.sod_select.touch select {
+  -webkit-appearance: menulist-button;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block !important;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */

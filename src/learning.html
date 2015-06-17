@@ -1,7 +1,7 @@
 //= template/header.html
   <main>
     <div class="container">
-      <div class="row learning-index main-content-index">
+      <div class="row main-content-index">
         <div class="col-xs-8">
           <h3 class="pink">ОКАЗЫВАЕМ УСЛУГИ <br>
 ПО КОНСУЛЬТИРОВАНИЮ <br>
@@ -35,7 +35,21 @@ Primavera Risk Analysis</a></li>
           </ul>
         </div>
         <div class="col-xs-8">
-          КАЛЕНДАРЬ
+          <section class="main">
+            <div class="custom-calendar-wrap">
+              <div id="custom-inner" class="custom-inner">
+                <div class="custom-header clearfix">
+                  <nav>
+                    <span id="custom-prev" class="custom-prev"></span>
+                    <span id="custom-next" class="custom-next"></span>
+                  </nav>
+                  <h2 id="custom-month" class="custom-month"></h2>
+                  <h3 id="custom-year" class="custom-year"></h3>
+                </div>
+                <div id="calendar" class="fc-calendar-container"></div>
+              </div>
+            </div>
+          </section>
         </div>
         </div>
         <div class="row learning-sales">
@@ -55,16 +69,31 @@ Primavera Risk Analysis</a></li>
 </p>
           </div>
         </div>
-        <div class="row main-content">
+        <div class="row main-content h3 content-line">
           <div class="col-xs-8">
             <h3 class="pink">ОТ КОНСУЛЬТАЦИЙ <br> ДО АУТСОРСИНГА</h3>
           </div>
-          <div class="col-xs-8"></div>
-          <div class="col-xs-8"></div>
+          <div class="col-xs-8">
+            <h3 class="pink">Линия консультаций</h3>
+            <p>Принцип работы нашей линии консультаций — любая задача должна быть выполнена</p><br>
+            <h3 class="pink">Технологии</h3>
+            <p>Он-лайн консультации
+            Вебинары и видеоконференции</p>
+          </div>
+          <div class="col-xs-8">
+            <h3 class="pink">Аутсорсинг проектного офиса</h3>
+            <p>Услуги по созданию графиков проектов и формированию отчетности<br><br>
+
+            Создание графика проекта зависит от объема работ и формата исходных данных, но обычно не превышает 
+            3-х дней</p><br>
+          </div>
         </div>
-    </div>
-    
-    </div>
-  </main>
+//= template/clients.html
   
+  //= template/reviews.html
+    </div>
+  
+  </main>
+
+
   //= template/footer.html
