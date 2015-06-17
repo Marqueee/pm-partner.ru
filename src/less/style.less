@@ -53,7 +53,15 @@ nav {
     }
   }
 }
-a.active{text-decoration: underline;}
+
+a.active {
+  text-decoration: underline;
+}
+h3.active{
+  a{
+    color: black;
+  }
+}
 .tel-header {
   color: #72001B !important;
   vertical-align: bottom;
@@ -110,7 +118,7 @@ a.active{text-decoration: underline;}
 }
 
 .main-slide {
-  background: #EEEFEF;
+  background: @background-gray;
   padding-top: 35px;
 }
 
@@ -154,7 +162,7 @@ a.active{text-decoration: underline;}
 }
 
 .contacts {
-  background: #EEEFEF;
+  background: @background-gray;
   padding-bottom: 60px;
 }
 
@@ -319,7 +327,7 @@ a.active{text-decoration: underline;}
 }
 
 .article-prev {
-  background-color: #EEEFEF;
+  background-color: @background-gray;
   padding: 0;
   height: 100%;
   padding-bottom: 60px;
@@ -362,6 +370,11 @@ a.active{text-decoration: underline;}
 }
 
 .collapse-list {
+  li.active {
+    & > a {
+      color: black;
+    }
+  }
   ul {
     margin-left: 35px;
     li {
@@ -380,12 +393,14 @@ a.active{text-decoration: underline;}
 }
 
 .projects-full-info {
-  p{padding-bottom: 30px;}
-  ul{
+  p {
+    padding-bottom: 30px;
+  }
+  ul {
     padding-left: 0px;
   }
   li {
-    padding:12.5px 0; 
+    padding: 12.5px 0;
     list-style-type: none;
     &:before {
       content: "•";
@@ -394,34 +409,44 @@ a.active{text-decoration: underline;}
     }
   }
 }
-.content-line-light-2{
+
+.content-line-light-2 {
   border-bottom: @color-gray 2px solid;
   padding-bottom: 60px;
 }
-.news-main{
-  .collapse-block{
+/*************NEWS****************/
+
+.news-main {
+  .collapse-block {
     padding-left: 35px;
   }
 }
-.news-list-body{
 
-  .news-list-head{
+.news-list-body {
+  .news-list-head {
     color: @brand-danger;
   }
   font-size: @font-size-h3;
-  .news-date{
+  .news-date {
     font-size: @font-size-h4;
     color: black;
     padding-bottom: 25px;
   }
-  .news-list-content{
+  .news-list-content {
     border-bottom: @color-gray 2px solid;
     padding-bottom: 60px;
-    p{
+    p {
       padding-bottom: 25px;
     }
   }
 }
-.pagination > li > a{
+
+.pagination > li > a {
   padding: 0 3px;
+}
+.learning-sales{
+  background-color: @background-gray;
+} 
+.learning-index{
+  font-size:@font-size-h3;
 }
