@@ -37,7 +37,7 @@
         width: 100%;
         padding: 10px 10px;
         border: 1px solid #ccc;
-        background: #ffffff;
+        background: #EEEFEF;
         color: @text-color;
         font-size: 11px;
         font-weight: 700;
@@ -46,7 +46,8 @@
         outline-offset: -2px; /* Opera */
         cursor: pointer;
         margin-bottom: 10px;
-        box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+        .box-shadow(inset 1px 1px 1px 0 rgba(0,0,0,0.2));
+      .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
     }
 
     /* Up/Down arrows */

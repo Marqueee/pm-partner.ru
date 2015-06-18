@@ -93,13 +93,26 @@ $(document).ready(function(){
             
             $events.css( 'top', '100%' );
             Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
-
           }
-
         }
-      
       });
+  
+  //Custom Select
     $("select").selectOrDie({
       // placeholderOption: true
     });
+  
+  //Slick slider for projects
+  $('.slick-projects').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay:true,
+    arrows:true,
+    dots: false
+  });
+  $('.slick-circles').slick({
+    dots:true,
+
+  });
 });
