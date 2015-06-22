@@ -1170,7 +1170,6 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  letter-spacing: -1px;
 }
 h1 small,
 h2 small,
@@ -7088,6 +7087,11 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'CirceWebLight';
+  src: url('../fonts/CRC35.eot');
+  src: url('../fonts/CRC35.eot?#iefix') format('embedded-opentype'), url('../fonts/CRC35.woff') format('woff');
+}
 .header-line-down {
   border-bottom: #e41642 1px solid;
 }
@@ -7470,7 +7474,6 @@ h3.active a {
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  letter-spacing: -1px;
   margin-bottom: 8px;
   font-size: 20px;
 }
