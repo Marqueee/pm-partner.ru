@@ -1269,7 +1269,7 @@ h6,
   font-size: 11px;
 }
 p {
-  margin: 0 0 8px;
+  margin: 0 0 15px;
   color: #6d6e71;
 }
 .lead {
@@ -3096,13 +3096,13 @@ output {
   height: 30px;
   padding: 6px 12px;
   font-size: 15px;
-  line-height: 1.1;
+  line-height: normal;
   color: #555555;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 0px;
-  box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -3121,6 +3121,13 @@ output {
 .form-control::-webkit-input-placeholder {
   color: #999999;
 }
+.form-control input,
+.form-control button,
+.form-control select,
+.form-control textarea {
+  font-size: none;
+  line-height: normal;
+}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
@@ -3133,6 +3140,7 @@ fieldset[disabled] .form-control {
 }
 textarea.form-control {
   height: auto;
+  resize: none;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -7228,16 +7236,20 @@ h3.active a {
   height: 100px;
 }
 .content-line {
-  border-bottom: #7a7b7e 2px solid;
+  border-bottom: #b6b6b8 1px solid;
   margin-bottom: 15px;
 }
 .content-line-light {
-  border-bottom: #cdd0d1 2px solid;
+  border-bottom: #E3E4E5 1px solid;
   padding-bottom: 5px;
 }
 .content-line-light-top {
-  border-top: #cdd0d1 2px solid;
+  border-top: #E3E4E5 1px solid;
   padding-top: 15px;
+}
+.content-line-light-2 {
+  border-bottom: #E3E4E5 1px solid;
+  padding-bottom: 60px;
 }
 .contacts {
   background: #eeefef;
@@ -7446,10 +7458,6 @@ h3.active a {
   color: #ea2a53;
   padding-right: 10px;
 }
-.content-line-light-2 {
-  border-bottom: #cdd0d1 2px solid;
-  padding-bottom: 60px;
-}
 /*************NEWS****************/
 .news-aside .collapse-block,
 .learning-aside .collapse-block {
@@ -7523,33 +7531,33 @@ h3.active a {
   height: 35px;
   background-size: 35px;
 }
-#kursor {
+.kursor {
   background-image: url(../img/kursor_pink.svg);
 }
-#kursor:hover {
+.kursor:hover {
   background-image: url(../img/kursor_grey.svg);
 }
-#play {
+.play {
   background-image: url(../img/play_pink.svg);
 }
-#play:hover {
+.play:hover {
   background-image: url(../img/play_grey.svg);
 }
-#monitor {
+.monitor {
   background-image: url(../img/presentation_pink.svg);
 }
-#monitor:hover {
+.monitor:hover {
   background-image: url(../img/presentation_grey.svg);
 }
-#call {
+.call {
   background-image: url(../img/call_pink.svg);
 }
-#call:hover {
+.call:hover {
   background-image: url(../img/call_grey.svg);
 }
 .request,
 .learning-request {
-  padding: 45px 0;
+  padding: 5px 0;
 }
 .request .form-group .form-control,
 .learning-request .form-group .form-control {
@@ -7564,7 +7572,7 @@ h3.active a {
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 0px;
-  box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -7575,6 +7583,9 @@ h3.active a {
 .request .form-group button,
 .learning-request .form-group button {
   margin-top: 25px;
+}
+.title-subheader {
+  padding-top: 3px;
 }
 /************Basic calendar styles******/
 .fc-calendar-container {
@@ -8259,7 +8270,7 @@ h3.active a {
   content: '\e080';
 }
 .slick-next {
-  right: -15px;
+  right: -5px;
 }
 .slick-next:before {
   font-size: 30px;

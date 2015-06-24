@@ -118,13 +118,13 @@ output {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: @padding-base-vertical @padding-base-horizontal;
   font-size: @font-size-base;
-  line-height: @line-height-base;
+  line-height: normal;
   color: @input-color;
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
   border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  .box-shadow(inset 1px 1px 1px 0 rgba(0,0,0,0.2));
+  .box-shadow(inset 1px 1px 2px 0 rgba(0,0,0,0.2));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -133,6 +133,12 @@ output {
   // Placeholder
   .placeholder();
 
+  
+  //Chrome input fix
+  input, button, select, textarea{ 
+   font-size: none; 
+   line-height: normal; 
+  }
   // Disabled and read-only inputs
   //
   // HTML5 says that controls under a fieldset > legend:first-child won't be
@@ -153,6 +159,7 @@ output {
   // Reset height for `textarea`s
   textarea& {
     height: auto;
+    resize: none;
   }
 }
 
