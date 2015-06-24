@@ -7101,9 +7101,21 @@ button.close {
 .container {
   width: 1200px !important;
 }
+.btn {
+  padding: 6px 10px;
+}
+.btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle) {
+  margin-right: 29px;
+}
 .logo {
-  width: 105px;
-  height: 65px;
+  width: 95px;
+  height: 55px;
+}
+.logo-container {
+  padding-top: 0px;
+}
+.header-content {
+  padding-top: 10px;
 }
 .header-top {
   border-bottom: #e41642 1px solid;

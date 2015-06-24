@@ -18,13 +18,24 @@
 .container {
   width: 1200px !important;
 }
+.btn{
+  padding: 6px 10px;
+}
+.btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle){
+  margin-right: 29px;
+}
 
 //HEADER CUSTOM STYLES
 .logo {
-  width: 105px;
-  height: 65px;
+  width: 95px;
+  height: 55px;
 }
-
+.logo-container{
+  padding-top: 0px;
+}
+.header-content{
+  padding-top: 10px;
+}
 .header-top {
   .btn-danger {
     background-color: @brand-danger-dark;
@@ -44,7 +55,6 @@
     color: @color-white;
   }
 }
-
 nav {
   .row {
     background-color: @brand-danger;
