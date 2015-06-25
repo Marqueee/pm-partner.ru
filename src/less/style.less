@@ -422,12 +422,27 @@ h3.active {
   }
 }
 
-.projects-short {
-  p {
-    font-size: @font-size-h3;
+/**************PROJECTS***************/
+.projects-list-body{
+  .projects-short {
+    margin-bottom: 50px;
+    p {
+      font-size: @font-size-h3;
+    }
   }
 }
-
+.projects-review-body{
+  padding-top: 15px;
+  .content-line-light-2
+}
+.projects-last{
+  padding-top: 15px;
+}
+.projects-content{
+  padding-bottom: 50px;
+  border-bottom: 1px solid #E3E4E5;
+  padding-top: 15px;
+}
 .projects-full-info {
   p {
     padding-bottom: 30px;
@@ -445,7 +460,8 @@ h3.active {
     }
   }
 }
-/*************NEWS****************/
+
+/*************NEWS and LEARNING****************/
 
 .news-aside,
 .learning-aside {
@@ -465,7 +481,7 @@ h3.active {
     padding-bottom: 25px;
   }
   .news-list-content {
-    border-bottom: @color-gray 2px solid;
+    border-bottom: @color-gray 1px solid;
     padding-bottom: 60px;
     p {
       padding-bottom: 25px;
@@ -557,4 +573,23 @@ h3.active {
 
 .title-subheader {
   padding-top: 3px;
+}
+
+.arrow-left{
+  position: relative;
+  top: 1px;
+  display: inline-block;
+ background:url(../img/arrowleft.svg) no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+.arrow-right{
+  position: relative;
+  top: 1px;
+  display: inline-block;
+ background:url(../img/arrowright.svg) no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
 }

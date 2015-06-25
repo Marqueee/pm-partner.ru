@@ -15,8 +15,8 @@ $(document).ready(function(){
     pagination:false,
     navigation: true,
 	navigationText: [
-      '<i class="glyphicon glyphicon-chevron-left"></i>', 
-      '<i class="glyphicon glyphicon-chevron-right"></i>'
+      '<i class="arrow-left"></i>', 
+      '<i class="arrow-right"></i>'
     ]
   });
   
