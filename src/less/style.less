@@ -24,7 +24,8 @@
 }
 
 .btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle) {
-  margin-right: 29px;
+  margin-right: 10px;
+  padding-right: 25px;
 }
 
 //HEADER CUSTOM STYLES
@@ -51,7 +52,7 @@
   }
   .header-line-down;
   background-color: @brand-danger;
-  padding:15px 0;
+  padding:10px 0;
   h4 {
     color: @color-white;
     margin-top: 3px;
@@ -132,11 +133,12 @@ h3.active {
 
 .main-content-index {
   padding-top: 30px;
+  box-shadow: inset 0px 72px 23px -66px rgba(0,0,0,0.4);
 }
 
 .main-content {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .main-content-ident {
@@ -199,7 +201,7 @@ h3.active {
 
 .contacts {
   background: @background-gray;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .capt {
@@ -255,6 +257,9 @@ h3.active {
   }
   p {
     color: @color-white;
+  }
+  ul, ol{
+    margin-bottom: -8px;
   }
 }
 
@@ -557,7 +562,7 @@ h3.active {
       color: @input-color;
       background-color: #EEEFEF;
       background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-      border: 1px solid @input-border;
+      border: 1px solid @input-border; 
       border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
       .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2));
       .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");

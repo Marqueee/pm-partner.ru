@@ -3100,9 +3100,9 @@ output {
   color: #555555;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: none;
   border-radius: 0px;
-  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -7113,7 +7113,8 @@ button.close {
   padding: 6px 10px;
 }
 .btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle) {
-  margin-right: 29px;
+  margin-right: 10px;
+  padding-right: 25px;
 }
 .logo {
   width: 95px;
@@ -7128,7 +7129,7 @@ button.close {
 .header-top {
   border-bottom: #e41642 1px solid;
   background-color: #ea2a53;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .header-top .btn-danger {
   background-color: #cb1b46;
@@ -7200,10 +7201,11 @@ h3.active a {
 }
 .main-content-index {
   padding-top: 30px;
+  box-shadow: inset 0px 72px 23px -66px rgba(0, 0, 0, 0.4);
 }
 .main-content {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 .main-content-ident {
   margin-top: 45px;
@@ -7253,7 +7255,7 @@ h3.active a {
 }
 .contacts {
   background: #eeefef;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 .capt {
   margin-bottom: 10px;
@@ -7307,6 +7309,12 @@ h3.active a {
 .footer-top p,
 .footer-down p {
   color: #ffffff;
+}
+.footer-top ul,
+.footer-down ul,
+.footer-top ol,
+.footer-down ol {
+  margin-bottom: -8px;
 }
 #polycopy {
   margin-left: 15px;
@@ -8277,7 +8285,7 @@ h3.active a {
   content: '\e080';
 }
 .slick-prev {
-  left: -15px;
+  left: -11px;
 }
 .slick-prev:before {
   position: relative;
@@ -8291,7 +8299,7 @@ h3.active a {
   content: '\e079';
 }
 [dir='rtl'] .slick-prev {
-  right: -15px;
+  right: -11px;
   left: auto;
 }
 [dir='rtl'] .slick-prev:before {
@@ -8307,7 +8315,7 @@ h3.active a {
 }
 [dir='rtl'] .slick-next {
   right: auto;
-  left: -15px;
+  left: -11px;
 }
 [dir='rtl'] .slick-next:before {
   position: relative;
@@ -8321,7 +8329,7 @@ h3.active a {
   content: '\e080';
 }
 .slick-next {
-  right: -5px;
+  right: -1px;
 }
 .slick-next:before {
   position: relative;
