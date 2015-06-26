@@ -126,7 +126,9 @@ output {
   border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   .box-shadow(inset 1px 1px 3px 0 rgba(0, 0, 0, 0.2));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
-
+  &:focus{
+    border-color:none;
+  }
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
 

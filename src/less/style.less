@@ -133,7 +133,6 @@ h3.active {
 
 .main-content-index {
   padding-top: 30px;
-  box-shadow: inset 0px 72px 23px -66px rgba(0,0,0,0.4);
 }
 
 .main-content {
@@ -186,7 +185,7 @@ h3.active {
 
 .content-line-light {
   border-bottom: #E3E4E5 1px solid;
-  padding-bottom: 5px;
+//  padding-bottom: 5px;
 }
 
 .content-line-light-top {
@@ -380,7 +379,7 @@ h3.active {
 /***********COLLAPSE*********************/
 
 .collapse-block {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   .glyphicon {
     color: @brand-danger;
   }
@@ -419,7 +418,7 @@ h3.active {
   ul {
     margin-left: 35px;
     li {
-      padding: 10px 0;
+      padding: 5px 0;
       &:first-child {
         margin-top: 15px;
       }
@@ -450,7 +449,7 @@ h3.active {
 }
 .projects-full-info {
   p {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   ul {
     padding-left: 0px;
@@ -483,13 +482,13 @@ h3.active {
   .news-date {
     font-size: @font-size-h4;
     color: black;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
   .news-list-content {
     border-bottom: @color-gray 1px solid;
     padding-bottom: 60px;
     p {
-      padding-bottom: 25px;
+      padding-bottom: 15px;
     }
   }
 }
@@ -501,12 +500,15 @@ h3.active {
 .learning-sales {
   background-color: @background-gray;
   font-size: @font-size-h3;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .learning-content {
   .projects-full-info;
   .h3;
+  p{
+    padding-bottom: 0px;
+  }
 }
 
 .learning-request {
@@ -547,6 +549,11 @@ h3.active {
     background-image: url(../img/call_grey.svg);
   }
 }
+.form-control:focus{
+  box-shadow: none;
+}
+
+/*************FORMS CUSTOMIZE************/
 
 .request,
 .learning-request {
@@ -558,11 +565,11 @@ h3.active {
       height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
       padding: @padding-base-vertical @padding-base-horizontal;
       font-size: @font-size-base;
-      line-height: @line-height-base;
+      line-height: normal; //@line-height-base
       color: @input-color;
       background-color: #EEEFEF;
       background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-      border: 1px solid @input-border; 
+      border:none ;  //1px solid @input-border
       border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
       .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2));
       .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
@@ -575,6 +582,31 @@ h3.active {
     }
   }
 }
+.form-group {
+    
+    .form-control {
+      display: block;
+      width: 100%;
+      height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+      padding: @padding-base-vertical @padding-base-horizontal;
+      font-size: @font-size-base;
+      line-height: normal; //@line-height-base
+      color: @input-color;
+      background-color: #fff;
+      background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+      border:none ;  //1px solid @input-border
+      border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+      .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2));
+//      .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+    }
+    textarea.form-control {
+      height: auto;
+    }
+    button {
+      margin-top: 25px;
+    }
+  }
+
 
 .title-subheader {
   padding-top: 3px;
@@ -597,4 +629,17 @@ h3.active {
   background-size: 30px;
   width: 30px;
   height: 30px;
+}
+#programs{
+  .main-content{
+    padding-top: 15px;
+  }
+}
+.shadow{
+  box-shadow: inset 0px 72px 23px -66px rgba(0,0,0,0.4);
+}
+#news-articles{
+  .main-content{
+    padding-bottom: 20px;
+  }
 }
