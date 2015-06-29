@@ -7115,9 +7115,12 @@ button.close {
 .btn {
   padding: 6px 10px;
 }
-.btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn-catalog-index:first-child:not(:last-child):not(.dropdown-toggle) {
   margin-right: 10px;
   padding-right: 38px;
+}
+.btn-group > .btn-catalog:first-child:not(:last-child):not(.dropdown-toggle) {
+  margin-right: 10px;
 }
 .logo {
   width: 95px;
@@ -7298,6 +7301,10 @@ h3.active a {
 .footer-down {
   background-color: #58595b;
   color: #ffffff;
+}
+.footer-top .text-small,
+.footer-down .text-small {
+  color: #a4a6a9;
 }
 .footer-top a,
 .footer-down a {
@@ -7485,6 +7492,9 @@ h3.active a {
   padding-right: 10px;
 }
 /*************NEWS and LEARNING****************/
+#learning .main-content {
+  padding-bottom: 0px;
+}
 .news-aside .collapse-block,
 .learning-aside .collapse-block {
   padding-left: 35px;
@@ -7665,7 +7675,10 @@ h3.active a {
   box-shadow: inset 0px 72px 23px -66px rgba(0, 0, 0, 0.4);
 }
 #news-articles .main-content {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+}
+.exp_text p.h3 {
+  margin-bottom: 2px !important;
 }
 /************Basic calendar styles******/
 .fc-calendar-container {
