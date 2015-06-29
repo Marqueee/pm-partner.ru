@@ -7296,6 +7296,7 @@ h3.active a {
 .footer-column-2 p {
   display: block;
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 .footer-top,
 .footer-down {
