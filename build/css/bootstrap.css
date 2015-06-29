@@ -7675,7 +7675,7 @@ h3.active a {
   box-shadow: inset 0px 72px 23px -66px rgba(0, 0, 0, 0.4);
 }
 #news-articles .main-content {
-  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 .exp_text p.h3 {
   margin-bottom: 2px !important;
