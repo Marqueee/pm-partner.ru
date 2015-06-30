@@ -7655,7 +7655,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowleft.svg) no-repeat;
+  background: url(../img/arrowleft.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -7664,7 +7664,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowright.svg) no-repeat;
+  background: url(../img/arrowright.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -8287,7 +8287,7 @@ h3.active a {
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 22%;
   display: block;
   width: 20px;
   height: 20px;
@@ -8342,7 +8342,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowleft.svg) no-repeat;
+  background: url(../img/arrowleft.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -8357,7 +8357,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowleft.svg) no-repeat;
+  background: url(../img/arrowleft.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -8372,7 +8372,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowright.svg) no-repeat;
+  background: url(../img/arrowright.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -8386,7 +8386,7 @@ h3.active a {
   position: relative;
   top: 1px;
   display: inline-block;
-  background: url(../img/arrowright.svg) no-repeat;
+  background: url(../img/arrowright.png) no-repeat;
   background-size: 30px;
   width: 30px;
   height: 30px;
